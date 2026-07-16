@@ -10,6 +10,7 @@ import {
 import { formatPostedDate, getJobTypeColor, truncate } from '../../utils/helpers';
 import { useSavedJobs } from '../../context/SavedJobsContext';
 
+
 export default function JobCard({ job }) {
   const { toggleSaveJob, isJobSaved } = useSavedJobs();
   const saved = isJobSaved(job.id);
